@@ -6,7 +6,6 @@
  */
 
 // This #include statement was automatically added by the Particle IDE.
-//#include <MDNS.h>
 #include <Particle_SI7021.h>
 #include <ITEADLIB_Nextion.h>
 #include <VCNL4010.h>
