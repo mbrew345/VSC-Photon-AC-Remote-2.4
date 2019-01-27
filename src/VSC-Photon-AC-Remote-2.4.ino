@@ -112,6 +112,21 @@ NexTouch *nex_listen_list[] = {
   Particle.variable("WiFi SSID", &dspSSID, STRING);
 
 
+WiFiAccessPoint aps[20];
+int found = WiFi.scan(aps, 20);
+for (int i=0; i<found; i++) {
+    WiFiAccessPoint& ap = aps[i];
+    Serial.print("SSID: ");
+    Serial.println(ap.ssid);
+    Serial.print("Security: ");
+    Serial.println(ap.security);
+    Serial.print("Channel: ");
+    Serial.println(ap.channel);
+    Serial.print("RSSI: ");
+    Serial.println(ap.rssi);
+}
+
+
 }
 
 
