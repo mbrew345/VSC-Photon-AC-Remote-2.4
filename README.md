@@ -1,4 +1,4 @@
-# VSC_AC_Remote
+# AC-Remote-Controller
 
 A Particle project named VSC_AC_Remote
 
